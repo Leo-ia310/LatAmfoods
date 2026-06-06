@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LatAm Foods LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600;1,9..144,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Navegación principal">
+      <a class="brand" href="#hero" aria-label="LatAm Foods LLC inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36" role="img">
+            <path
+              d="M29.8 5.9C17.7 6.3 8.7 12.8 7.8 23.1c-.3 3.4 2.4 6.4 5.8 6.4 10.2 0 16.7-9.2 17.2-21.6 0-1.1-.8-2.1-1-2z" />
+            <path d="M12 25.7c3.5-6 7.8-9.9 14.5-13.6" />
+          </svg>
+        </span>
+        <span>LatAm Foods</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#por-que" data-i18n="nav-why">¿Por qué nosotros?</a>
+        <a href="#productos" data-i18n="nav-products">Productos</a>
+        <a href="#cobertura" data-i18n="nav-coverage">Cobertura</a>
+      </div>
+
+      <div class="header-actions">
+        <button id="langBtn" class="btn-lang" aria-label="Cambiar idioma">EN</button>
+        <a class="btn btn-primary nav-cta" href="#contacto" data-i18n="nav-cta">Solicitar cotización</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="section-inner hero-grid">
+        <div class="hero-copy">
+
+
+          <h1 data-i18n="hero-title">
+            El sabor <em>de LatAm</em> en tus anaqueles
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="hero-subtitle">
+            Distribuimos todo tipo de alimentos latinos a supermercados y tiendas
+            en todo Estados Unidos. Variedad, calidad y entrega confiable — todo
+            en un solo proveedor.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-amber" href="#contacto" data-i18n="hero-btn-quote">Solicitar cotización</a>
+            <a class="btn btn-outline-light" href="#productos" data-i18n="hero-btn-catalog">Ver catálogo</a>
+          </div>
+
+          <div class="metrics" aria-label="Métricas de LatAm Foods LLC">
+            <div class="metric">
+              <strong>50+</strong>
+              <span data-i18n="metric-states">ESTADOS CUBIERTOS</span>
+            </div>
+            <div class="metric">
+              <strong>500+</strong>
+              <span data-i18n="metric-products">PRODUCTOS</span>
+            </div>
+            <div class="metric">
+              <strong>100%</strong>
+              <span data-i18n="metric-owned">LATINO-OWNED</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="LatAm Foods LLC">
+          <div class="leaf-illustration" aria-hidden="true">
+            <svg viewBox="0 0 320 360" role="img">
+              <path
+                d="M277.7 30.4C160.3 33.2 64.9 93.7 54.4 203.3c-4.8 50.4 35.1 94.1 85.8 94.1 109.8 0 172.8-100.7 177.1-241.4.6-19.8-8.4-26.1-39.6-25.6z" />
+              <path d="M83 260.4C119.7 178.9 170.2 123.6 257 77.2" />
+              <path d="M120.4 223.3c5.2-31.8 2.1-59.9-9.6-84.1" />
+              <path d="M158.7 177.8c25 3.3 53.9-1.9 86.8-15.5" />
+              <path d="M187.5 132.6c15.5-1.3 33.5-6.5 54-15.8" />
+            </svg>
+          </div>
+          <p>LatAm Foods LLC</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream" id="por-que">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="why-eyebrow">¿POR QUÉ ELEGIRNOS?</p>
+          <h2 data-i18n="why-title">Tu proveedor latino <em>de confianza</em></h2>
+          <p data-i18n="why-desc">
+            Llevamos el auténtico sabor latinoamericano directamente a tus
+            anaqueles con rapidez, variedad y servicio personalizado.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🌿</span>
+            <h3 data-i18n="feat1-title">Variedad completa.</h3>
+            <p data-i18n="feat1-desc">
+              Más de 500 productos latinos — desde abarrotes hasta bebidas,
+              snacks, condimentos y más. Todo en un solo pedido.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🚚</span>
+            <h3 data-i18n="feat2-title">Entrega nacional.</h3>
+            <p data-i18n="feat2-desc">
+              Distribuimos a supermercados y tiendas en todo EE.UU. con rutas
+              optimizadas y tiempos de entrega garantizados.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">❤️</span>
+            <h3 data-i18n="feat3-title">100% Latino-owned.</h3>
+            <p data-i18n="feat3-desc">
+              Entendemos tu negocio porque somos parte de la comunidad.
+              Hablamos tu idioma y conocemos los productos que tus clientes
+              buscan.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">📦</span>
+            <h3 data-i18n="feat4-title">Pedidos flexibles.</h3>
+            <p data-i18n="feat4-desc">
+              Sin mínimos absurdos. Adaptamos el volumen, la frecuencia y las
+              condiciones de pago a las necesidades de tu negocio.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream catalog-section" id="productos">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="cat-eyebrow">CATÁLOGO</p>
+          <h2 data-i18n="cat-title">Todo lo que tu tienda <em>necesita</em></h2>
+          <p data-i18n="cat-desc">
+            Productos auténticos de México, Centroamérica, el Caribe y
+            Sudamérica — seleccionados para el mercado hispano en EE.UU.
+          </p>
+        </div>
+
+        <div class="catalog-grid" aria-label="Categorías de productos">
+          <article class="catalog-card card-green">
+            <span aria-hidden="true">🌽</span>
+            <h3 data-i18n="cat1">Abarrotes</h3>
+          </article>
+          <article class="catalog-card card-amber">
+            <span aria-hidden="true">🥤</span>
+            <h3 data-i18n="cat2">Bebidas</h3>
+          </article>
+          <article class="catalog-card card-red">
+            <span aria-hidden="true">🌶️</span>
+            <h3 data-i18n="cat3">Salsas y condimentos</h3>
+          </article>
+          <article class="catalog-card card-green">
+            <span aria-hidden="true">🍪</span>
+            <h3 data-i18n="cat4">Snacks y dulces</h3>
+          </article>
+          <article class="catalog-card card-amber">
+            <span aria-hidden="true">🫘</span>
+            <h3 data-i18n="cat5">Frijoles y granos</h3>
+          </article>
+          <article class="catalog-card card-red">
+            <span aria-hidden="true">🧴</span>
+            <h3 data-i18n="cat6">Limpieza del hogar</h3>
+          </article>
+          <article class="catalog-card card-green">
+            <span aria-hidden="true">🥫</span>
+            <h3 data-i18n="cat7">Enlatados</h3>
+          </article>
+          <article class="catalog-card card-amber">
+            <span aria-hidden="true">🌮</span>
+            <h3 data-i18n="cat8">Tortillas y masas</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section coverage-section" id="cobertura">
+      <div class="section-inner coverage-grid">
+        <div class="coverage-copy">
+          <p class="eyebrow eyebrow-amber" data-i18n="cov-eyebrow">COBERTURA NACIONAL</p>
+          <h2 data-i18n="cov-title">Llegamos a donde <em>están tus clientes</em></h2>
+          <p data-i18n="cov-desc">
+            Distribución activa en los principales mercados hispanos de Estados
+            Unidos, con capacidad de expansión nacional.
+          </p>
+        </div>
+
+        <div class="state-grid" aria-label="Estados con cobertura">
+          <span class="state-pill"><i></i>Florida</span>
+          <span class="state-pill"><i></i>Texas</span>
+          <span class="state-pill"><i></i>California</span>
+          <span class="state-pill"><i></i>New York</span>
+          <span class="state-pill"><i></i>Illinois</span>
+          <span class="state-pill"><i></i>Georgia</span>
+          <span class="state-pill"><i></i>Arizona</span>
+          <span class="state-pill" data-i18n="state-more"><i></i>+ más estados</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-cta" id="contacto">
+    <div class="section-inner footer-inner">
+      <p class="eyebrow" data-i18n="ft-eyebrow">TRABAJA CON NOSOTROS</p>
+      <h2 data-i18n="ft-title">¿Listo para llenar <em>tus anaqueles</em>?</h2>
+      <p data-i18n="ft-desc">
+        Déjanos tu correo y un representante te contactará en menos de 24 horas
+        con una cotización personalizada.
+      </p>
+
+      <form class="quote-form" action="#" method="post">
+        <label>
+          <span data-i18n="form-email">Correo electrónico</span>
+          <input type="email" name="email" placeholder="tu@tienda.com" data-i18n-placeholder="form-email-ph" required />
+        </label>
+        <label>
+          <span data-i18n="form-business">Nombre de tu negocio</span>
+          <input type="text" name="business" placeholder="Nombre de tu negocio" data-i18n-placeholder="form-business-ph"
+            required />
+        </label>
+        <button class="btn btn-amber" type="submit" data-i18n="form-btn">Solicitar cotización →</button>
+      </form>
+
+      <p class="direct-email">
+        <span data-i18n="ft-direct">O escríbenos directamente a</span>
+        <a href="mailto:ventas@latamfoodsllc.com">ventas@latamfoodsllc.com</a>
+      </p>
+      <p class="copyright" data-i18n="ft-copyright">© 2025 LatAm Foods LLC. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
