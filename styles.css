@@ -486,28 +486,100 @@ h2 em {
   color: rgba(255, 255, 255, 0.72);
 }
 
-.state-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
+.map-container {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  display: grid;
+  gap: 18px;
 }
 
-.state-pill {
-  min-height: 48px;
-  display: inline-flex;
-  align-items: center;
+.map-panel {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(14px, 2.8vw, 24px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+}
+
+.coverage-map {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 976 / 620;
+  filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.26));
+}
+
+.coverage-nation {
+  fill: rgba(255, 255, 255, 0.14);
+  stroke: rgba(255, 255, 255, 0.26);
+  stroke-width: 1.15;
+  vector-effect: non-scaling-stroke;
+}
+
+.coverage-state {
+  fill: var(--amber);
+  stroke: #fff1c2;
+  stroke-width: 2.3;
+  vector-effect: non-scaling-stroke;
+  filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.24));
+}
+
+.map-code rect {
+  fill: var(--dark);
+  stroke: rgba(255, 255, 255, 0.34);
+  stroke-width: 1.3;
+  vector-effect: non-scaling-stroke;
+}
+
+.map-code text {
+  color: var(--white);
+  fill: currentColor;
+  font-family: var(--body);
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.coverage-states {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 999px;
-  padding: 0 18px;
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(255, 255, 255, 0.04);
-  font-weight: 800;
 }
 
-.state-pill i {
-  background: var(--green);
-  box-shadow: 0 0 0 4px rgba(29, 158, 117, 0.12);
+.coverage-states li {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.84rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.coverage-states span {
+  width: 32px;
+  height: 24px;
+  flex: 0 0 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  background: var(--amber);
+  color: var(--dark);
+  font-size: 0.72rem;
+  font-weight: 900;
 }
 
 .footer-cta {
@@ -697,12 +769,15 @@ h2 em {
     min-height: 128px;
   }
 
-  .state-grid {
-    display: grid;
+  .map-panel {
+    padding: 12px;
+  }
+
+  .coverage-states {
     grid-template-columns: 1fr;
   }
 
-  .state-pill {
-    width: 100%;
+  .coverage-states li {
+    min-height: 40px;
   }
 }
